@@ -272,6 +272,26 @@ Note that this overwrites `chunks.json` and `retrieval_index.pkl` with the last 
 9. Record results in GitHub and Trello. In progress.
 10. Decide the final design and assessable conclusions as a team. Ongoing.
 
+## 3-Week Plan
+
+### Week 1: Strengthen the evaluation framework and knowledge base
+- Add expected source/document labels to `test_questions.csv` to enable proper Recall@K and Precision@K measurement, not just refusal accuracy.
+- Design and implement a stronger correctness measure to replace `category_keyword_match` (e.g. manually written reference answers with human correctness scoring).
+- Record source URLs and last-updated dates for all knowledge base documents in a source log, to support source-attribution evaluation.
+- Expand the test question set beyond 15 questions to cover more edge cases (ambiguous items, multi-category items, regional variation).
+
+### Week 2: Expand evaluation dimensions and stress-test the pipeline
+- Implement faithfulness checks (does the answer actually reflect the retrieved context, or does it hallucinate beyond it).
+- Add source attribution correctness scoring (does the cited source actually support the claim made).
+- Test the pipeline against a larger, more varied knowledge base (adding 2-3 more official documents) to check retrieval still performs well at scale.
+- Begin drafting the technical report / presentation materials summarising evaluation methodology and results so far.
+
+### Week 3: Finalise design, consolidate findings, and prepare deliverables
+- Compare final evaluation results across all implemented dimensions and settle on the definitive configuration and evaluation framework as a team.
+- Conduct a final round of manual review across all test questions to sanity-check automated evaluation scores.
+- Consolidate all findings (chunk-size/Top-K comparison, faithfulness, source attribution, refusal accuracy) into a single results summary.
+- Finalise documentation (README, Trello board, GitHub commit history) and prepare the demo/prototype walkthrough for presentation.
+
 ## Important assessment note
 
 This starter implementation is intended as code assistance for reproducing and understanding a RAG workflow. The team should review, test, modify, and document all code, and make its own final project decisions, analysis, conclusions, and assessable writing.
