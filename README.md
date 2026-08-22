@@ -4,13 +4,13 @@
 
 ## Team Members
 
-| Student ID | Name |
-|---|---|
-| s4192927 | Rohit  | 	GitHub and Trello administration; repository setup and version control |
-| sXXXXXXX | Nihant |   Domain and data curation; knowledge base sourcing; user story design.  |
+| Student ID | Name | Roles |
+|---|---|---|
+| s4192927 | Rohit | GitHub and Trello administration; repository setup and version control |
+| sXXXXXXX | Nihant | Domain and data curation; knowledge base sourcing; user story design |
 | s4090991 | Shashank | RAG pipeline development; bug fixes; evaluation experiments (chunk size / Top-K comparison) |
-| sXXXXXXX | Surbhi | 	Report drafting; project aim statement; sprint planning |
-| s4129561 | Shobhen | 	Report compilation and finalisation; code corrections and bug fixes; completing outstanding project aspects; Trello board setup and maintenance|
+| sXXXXXXX | Surbhi | Report drafting; project aim statement; sprint planning |
+| s4129561 | Shobhen | Report compilation and finalisation; code corrections and bug fixes; completing outstanding project aspects; Trello board setup and maintenance |
 
 Starter implementation for a WIL project exploring **Test-Driven Retrieval-Augmented Generation (RAG)** for household waste-sorting questions.
 
