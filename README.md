@@ -1,5 +1,17 @@
 # Test-Driven RAG Waste Sorting Assistant
 
+**WIL Group:** Group 26
+
+## Team Members
+
+| Student ID | Name |
+|---|---|
+| s4192927 | Rohit  |
+| sXXXXXXX | Nihant |
+| sXXXXXXX | Shashank |
+| sXXXXXXX | Surbhi |
+| sXXXXXXX | Shobhen |
+
 Starter implementation for a WIL project exploring **Test-Driven Retrieval-Augmented Generation (RAG)** for household waste-sorting questions.
 
 ## Project idea
