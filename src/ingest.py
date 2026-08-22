@@ -6,7 +6,7 @@ ROOT = Path(__file__).resolve().parents[1]
 KB_DIR = ROOT / "data" / "knowledge_base"
 OUT_FILE = ROOT / "data" / "processed" / "chunks.json"
 
-CHUNK_SIZE = 700
+CHUNK_SIZE = 350
 CHUNK_OVERLAP = 120
 
 

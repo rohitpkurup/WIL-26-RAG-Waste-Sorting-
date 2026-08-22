@@ -51,7 +51,7 @@ class WasteSortingRAG:
     def __init__(self):
         self.retriever = Retriever()
 
-    def answer(self, question: str, top_k: int = 3):
+    def answer(self, question: str, top_k: int = 5):
         results = self.retriever.search(question, top_k=top_k)
 
         if not results or results[0]["score"] < MIN_RETRIEVAL_SCORE:

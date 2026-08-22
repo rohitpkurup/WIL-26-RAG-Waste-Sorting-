@@ -26,7 +26,7 @@ def main():
     output = []
 
     for _, row in tests.iterrows():
-        result = rag.answer(row["question"], top_k=3)
+        result = rag.answer(row["question"], top_k=5)
 
         expected_refusal = row["expected_behaviour"].lower() == "refuse"
         actual_refusal = bool(result["refused"])

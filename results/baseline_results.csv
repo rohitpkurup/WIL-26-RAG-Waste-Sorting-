@@ -1,68 +1,72 @@
 id,question,expected_category,expected_behaviour,answer,actual_refusal,refusal_correct,category_keyword_match,top_retrieved_source,top_retrieval_score
-Q01,Where should food scraps go?,FOGO,answer,"If a FOGO service is available, food scraps can go into the appropriate organics stream.
-
-Sources:
-- 02_fogo.txt
-- 04_special_waste.txt",False,True,True,02_fogo.txt,0.4714553952217102
-Q02,Can garden clippings go in the green bin?,FOGO,answer,"Yes, garden clippings can go in the green bin, as they are considered part of the food and garden organics (FOGO) guidance.
-
-Sources:
-- 02_fogo.txt
-- 01_recycling_bins.txt
-- 04_special_waste.txt",False,True,True,02_fogo.txt,0.5091714262962341
-Q03,Can plastic packaging go in the FOGO bin?,Not FOGO,answer,"No, plastic packaging should not be placed in the FOGO bin.
-
-Sources:
-- 02_fogo.txt
-- 04_special_waste.txt",False,True,False,02_fogo.txt,0.5864300727844238
-Q04,Can batteries go in my rubbish bin?,E-waste,answer,"No, batteries should not be placed in household bins.
+Q01,Where should food scraps go?,FOGO,answer,"[Answer]
+If a FOGO service is available, food scraps can go into the appropriate organics stream.
 
 Sources:
 - 04_special_waste.txt
-- 03_ewaste.txt",False,True,False,04_special_waste.txt,0.535557746887207
+- 01_recycling_bins.txt
+- 02_fogo.txt",False,True,True,04_special_waste.txt,0.5784026384353638
+Q02,Can garden clippings go in the green bin?,FOGO,answer,"According to Context 1, Context 3, and Context 4, yes, garden clippings can be separated from landfill waste and processed into compost, and they can go in the green bin, specifically the FOGO bin, as long as they are correctly separated from contaminants.
+
+Sources:
+- 01_recycling_bins.txt
+- 04_special_waste.txt
+- 02_fogo.txt",False,True,True,01_recycling_bins.txt,0.6690657734870911
+Q03,Can plastic packaging go in the FOGO bin?,Not FOGO,answer,"No, plastic packaging should not be placed in the FOGO bin, as indicated in Context 1 and Context 4.
+
+Sources:
+- 02_fogo.txt
+- 04_special_waste.txt",False,True,False,02_fogo.txt,0.6908221244812012
+Q04,Can batteries go in my rubbish bin?,E-waste,answer,"No, batteries should not go in household bins. They are considered e-waste and should be taken to an appropriate e-waste collection or drop-off point.
+
+Sources:
+- 04_special_waste.txt
+- 03_ewaste.txt",False,True,True,04_special_waste.txt,0.5619642734527588
 Q05,Where should an old laptop go?,E-waste,answer,"Take it to an appropriate e-waste collection or drop-off point.
 
 Sources:
 - 03_ewaste.txt
-- 04_special_waste.txt",False,True,True,03_ewaste.txt,0.1849718987941742
+- 04_special_waste.txt",False,True,True,03_ewaste.txt,0.2754919230937958
 Q06,Can soft plastic go in mixed recycling?,Not recycling,answer,"No, soft plastics that can be scrunched into a ball should generally be kept out of household recycling.
 
 Sources:
 - 04_special_waste.txt
 - 01_recycling_bins.txt
-- 02_fogo.txt",False,True,False,04_special_waste.txt,0.5363994836807251
+- 03_ewaste.txt",False,True,False,04_special_waste.txt,0.5329686403274536
 Q07,Can polystyrene go in household recycling?,Not recycling,answer,"No, polystyrene packaging and boxes should not be placed in household recycling.
 
 Sources:
 - 04_special_waste.txt
-- 01_recycling_bins.txt",False,True,False,04_special_waste.txt,0.5728224515914917
-Q08,Where should glass bottles go?,Glass,answer,"According to Context 3, Source: 01_recycling_bins.txt, glass bottles and jars should be placed in the purple bin.
+- 01_recycling_bins.txt
+- 03_ewaste.txt",False,True,False,04_special_waste.txt,0.6095751523971558
+Q08,Where should glass bottles go?,Glass,answer,"Glass bottles and jars should be placed in the purple bin, which is designated for glass collection.
 
 Sources:
 - 04_special_waste.txt
-- 01_recycling_bins.txt",False,True,True,04_special_waste.txt,0.28416240215301514
-Q09,Which bin is used for general rubbish?,General waste,answer,"The red bin is used for general rubbish.
+- 01_recycling_bins.txt",False,True,True,04_special_waste.txt,0.2860531806945801
+Q09,Which bin is used for general rubbish?,General waste,answer,"The yellow bin is used for general rubbish.
 
 Sources:
 - 04_special_waste.txt
 - 01_recycling_bins.txt
-- 03_ewaste.txt",False,True,False,04_special_waste.txt,0.593971848487854
-Q10,Can household chemicals go in any household bin?,Hazardous waste,answer,"No, household chemicals such as cleaners, bleach, fertiliser, car-care chemicals and nail-polish products should not be placed in household bins.
+- 03_ewaste.txt
+- 02_fogo.txt",False,True,False,04_special_waste.txt,0.5555703639984131
+Q10,Can household chemicals go in any household bin?,Hazardous waste,answer,"Household chemicals should not be placed in household bins. Use an appropriate collection or drop-off service.
 
 Sources:
 - 04_special_waste.txt
-- 02_fogo.txt",False,True,False,04_special_waste.txt,0.7887852787971497
+- 02_fogo.txt",False,True,False,04_special_waste.txt,0.7765398025512695
 Q11,Where should an old phone go?,E-waste,answer,"Take it to an appropriate e-waste collection or drop-off point.
 
 Sources:
 - 03_ewaste.txt
-- 04_special_waste.txt",False,True,True,03_ewaste.txt,0.13933907449245453
+- 04_special_waste.txt",False,True,True,03_ewaste.txt,0.2753666639328003
 Q12,Can takeaway packaging go in FOGO?,Not FOGO,answer,"No, takeaway packaging cannot go in FOGO.
 
 Sources:
 - 02_fogo.txt
 - 04_special_waste.txt
-- 01_recycling_bins.txt",False,True,False,02_fogo.txt,0.5595656633377075
-Q13,What time does the next train leave?,Unsupported,refuse,I cannot answer this from the available waste-sorting knowledge base.,True,True,True,03_ewaste.txt,0.08531299978494644
-Q14,How do I renew my passport?,Unsupported,refuse,I cannot answer this from the available waste-sorting knowledge base.,True,True,True,03_ewaste.txt,0.051579125225543976
-Q15,Who won the AFL last year?,Unsupported,refuse,I cannot answer this from the available waste-sorting knowledge base.,True,True,True,01_recycling_bins.txt,0.07438236474990845
+- 01_recycling_bins.txt",False,True,False,02_fogo.txt,0.6281486749649048
+Q13,What time does the next train leave?,Unsupported,refuse,I cannot answer this from the available waste-sorting knowledge base.,True,True,True,03_ewaste.txt,0.09879899024963379
+Q14,How do I renew my passport?,Unsupported,refuse,I cannot answer this from the available waste-sorting knowledge base.,True,True,True,03_ewaste.txt,0.11853303760290146
+Q15,Who won the AFL last year?,Unsupported,refuse,I cannot answer this from the available waste-sorting knowledge base.,True,True,True,01_recycling_bins.txt,0.09332633018493652
