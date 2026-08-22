@@ -31,7 +31,7 @@ def clean_text(text: str) -> str:
 
 
 def make_chunks(text: str, chunk_size=CHUNK_SIZE, overlap=CHUNK_OVERLAP):
-    """Simple overlapping character-based chunking."""
+    """Simple overlapping character-based chunking, snapped to word boundaries."""
     text = clean_text(text)
     if not text:
         return []
@@ -41,12 +41,25 @@ def make_chunks(text: str, chunk_size=CHUNK_SIZE, overlap=CHUNK_OVERLAP):
 
     while start < len(text):
         end = min(start + chunk_size, len(text))
-        chunks.append(text[start:end])
 
-        if end == len(text):
+        if end < len(text):
+            last_space = text.rfind(" ", start, end)
+            if last_space > start:
+                end = last_space
+
+        chunks.append(text[start:end].strip())
+
+        if end >= len(text):
             break
 
-        start = max(0, end - overlap)
+        next_start = max(0, end - overlap)
+
+        if next_start > start:
+            space_after = text.find(" ", next_start)
+            if space_after != -1 and space_after < end:
+                next_start = space_after + 1
+
+        start = next_start
 
     return chunks
 
