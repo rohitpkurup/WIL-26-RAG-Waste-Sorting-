@@ -17,8 +17,7 @@ I cannot answer this from the available waste-sorting knowledge base.
 
 Do not guess.
 Keep the answer concise.
-At the end, include a Sources line listing only the supplied source filenames
-that directly support the answer.
+Do not include a Sources line yourself — it will be added automatically.
 """.strip()
 
 
@@ -80,11 +79,26 @@ ANSWER
 ------
 """.strip()
 
-        answer = generate_with_ollama(prompt)
+        raw_answer = generate_with_ollama(prompt)
 
-        refused = answer.startswith(
+        refused = raw_answer.startswith(
             "I cannot answer this from the available waste-sorting knowledge base."
         )
+
+        # Strip any Sources line the model wrote anyway — unreliable/can duplicate.
+        answer_body = raw_answer.split("Sources:")[0].strip()
+
+        if refused:
+            answer = answer_body
+        else:
+            # Build a clean, de-duplicated, ordered source list from what was
+            # actually retrieved (not what the model claims).
+            seen = []
+            for item in results:
+                if item["source"] not in seen:
+                    seen.append(item["source"])
+            sources_line = "Sources:\n" + "\n".join(f"- {s}" for s in seen)
+            answer = f"{answer_body}\n\n{sources_line}"
 
         return {
             "question": question,
