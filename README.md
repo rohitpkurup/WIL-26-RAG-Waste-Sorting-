@@ -292,6 +292,22 @@ Note that this overwrites `chunks.json` and `retrieval_index.pkl` with the last 
 - Consolidate all findings (chunk-size/Top-K comparison, faithfulness, source attribution, refusal accuracy) into a single results summary.
 - Finalise documentation (README, Trello board, GitHub commit history) and prepare the demo/prototype walkthrough for presentation.
 
+
+## Bottlenecks and Risks
+
+- **Non-deterministic LLM output.** Ollama's local generation is not seeded, so repeated evaluation runs on the same question set produce slightly different results (refusal accuracy varied 93.3-100 percent, keyword match varied 53.3-60 percent across three runs). This makes single-run results unreliable and requires repeated-run averaging or a fixed seed going forward.
+
+- **Weak automated correctness measure.** The current `category_keyword_match` proxy checks for literal keyword presence and does not reliably reflect true answer correctness. Several genuinely correct answers were marked as failures purely because they used different wording to the expected category label. This risks understating the system's real performance if not replaced with a stronger measure.
+
+- **Small knowledge base.** With only four source documents and 13 chunks (at the current chunk size), retrieval has limited material to work with. This keeps the prototype manageable for Milestone 1, but retrieval performance may not generalise to a larger, more realistic knowledge base.
+
+- **Limited test question coverage.** The 15-question test set does not yet cover ambiguous or multi-category waste items (e.g. items that are partly recyclable and partly hazardous), which are common in real-world use and would test the system's limits more thoroughly.
+
+- **Reliance on individual team members' local setup.** Since the project depends on a local Ollama installation and model, results may vary slightly between team members' machines. This is mitigated by documenting exact setup steps in the README, but is a risk for reproducibility.
+
+- **Time constraint for evaluation-framework improvements.** Strengthening the evaluation framework (faithfulness checks, source-attribution scoring, Recall@K/Precision@K) is more time-intensive than initial pipeline development. This has been scoped into the 3-week plan, but remains a risk if the team's availability is constrained by other coursework.
+
+  
 ## Important assessment note
 
 This starter implementation is intended as code assistance for reproducing and understanding a RAG workflow. The team should review, test, modify, and document all code, and make its own final project decisions, analysis, conclusions, and assessable writing.
