@@ -18,19 +18,21 @@ Starter implementation for a WIL project exploring **Test-Driven Retrieval-Augme
 
 The prototype retrieves relevant information from a small collection of official waste and recycling documents, then asks a local LLM to answer using only that retrieved context.
 
-The key project focus is **evaluation**, not simply chatbot development.
+## Project Aim Statement
+
+This project develops and evaluates a Test-Driven RAG assistant that helps Victorian households sort waste correctly using verified government sources, demonstrating measurable value through a rigorous evaluation framework rather than simply building a chatbot.
 
 ## User Stories
 
-- **As a** household resident, **I want to** ask plain-language questions about how to dispose of an item, **so that** I can sort my waste correctly without searching through council PDFs.
+- As a household resident, I want to ask plain-language questions about how to dispose of an item, so that I can sort my waste correctly without searching through council PDFs.
 
-- **As a** household resident, **I want to** receive a clear "I don't know" when my question falls outside official waste-sorting guidance, **so that** I don't act on a guessed or incorrect answer.
+- As a household resident, I want to receive a clear "I don't know" response when my question falls outside official waste-sorting guidance, so that I do not act on a guessed or incorrect answer.
 
-- **As a** local council communications officer, **I want to** see which official source document supports each answer, **so that** I can trust and verify the information given to residents.
+- As a local council communications officer, I want to see which official source document supports each answer, so that I can trust and verify the information given to residents.
 
-- **As a** sustainability education coordinator, **I want to** deploy a lightweight Q&A assistant trained only on verified government sources, **so that** I can reduce contamination in recycling/FOGO streams without hiring extra support staff.
+- As a sustainability education coordinator, I want to deploy a lightweight Q&A assistant trained only on verified government sources, so that I can reduce contamination in recycling and FOGO streams without hiring extra support staff.
 
-- **As a** project evaluator (marker/mentor), **I want to** see quantitative evidence of retrieval accuracy and refusal behaviour, **so that** I can assess whether the RAG solution demonstrably adds value rather than just "looking like a chatbot."
+- As a project evaluator (marker or mentor), I want to see quantitative evidence of retrieval accuracy and refusal behaviour, so that I can assess whether the RAG solution demonstrably adds value rather than simply resembling a chatbot.
 
 Initial evaluation ideas:
 - retrieval relevance / retrieval accuracy
@@ -81,7 +83,8 @@ waste-sorting-rag/
 │   ├── ingest.py
 │   ├── retrieve.py
 │   ├── rag.py
-│   └── evaluate.py
+│   ├── evaluate.py
+│   └── experiment.py
 └── results/
 ```
 
@@ -103,6 +106,14 @@ If PowerShell blocks activation, Command Prompt can be used:
 
 ```cmd
 .venv\Scripts\activate.bat
+pip install -r requirements.txt
+```
+
+### macOS / Linux
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -132,7 +143,7 @@ Put a small set of official PDF or TXT waste-sorting documents into:
 data/knowledge_base/
 ```
 
-For Milestone 1, around 3–6 documents is enough.
+For Milestone 1, around 3-6 documents is sufficient. Four Sustainability Victoria sources are currently included, covering recycling bins, FOGO, e-waste, and special or hazardous waste.
 
 ## 4. Ingest and chunk documents
 
@@ -146,11 +157,14 @@ This produces:
 data/processed/chunks.json
 ```
 
-Default starter settings:
-- chunk size = 700 characters
+Current default settings, updated following the comparison experiment described below:
+- chunk size = 350 characters
 - overlap = 120 characters
+- Top-K = 5
 
-These are deliberately exposed in `src/ingest.py` so the team can later test different values.
+These were originally set to chunk size 700 and Top-K 3 as starter values. After running a nine-configuration comparison experiment (see `src/experiment.py` and `results/experiment_comparison.csv`), the team adopted chunk size 350 and Top-K 5, which produced the highest retrieval confidence and category keyword match while maintaining 100 percent refusal accuracy on out-of-scope questions.
+
+These values remain exposed as variables in `src/ingest.py` and `src/rag.py` so the team can test further configurations later.
 
 ## 5. Build retrieval index
 
@@ -188,7 +202,7 @@ How do I renew my passport?
 
 The last question is intentionally outside the knowledge base and should be refused.
 
-## 7. Run the starter evaluation
+## 7. Run the baseline evaluation
 
 ```bash
 python src/evaluate.py
@@ -200,66 +214,63 @@ Results are written to:
 results/baseline_results.csv
 ```
 
-The current automated `category_keyword_match` is intentionally basic.
-It should NOT be treated as the final project correctness measure.
+The current automated `category_keyword_match` measure is intentionally basic and should not be treated as the final project correctness measure.
 
-A better team-designed evaluation could use:
+A more robust team-designed evaluation could incorporate:
 - manually created reference answers
-- expected source/document labels
+- expected source or document labels
 - human correctness judgements
 - retrieval Recall@K / Precision@K
 - faithfulness checks
 - source attribution correctness
 - unsupported-question refusal rate
 
-## Suggested first experiment
+## Chunk size and Top-K comparison experiment
 
-Run the same test questions under:
+This experiment has been completed. `src/experiment.py` automatically tests all combinations of the following parameters:
+- Chunk sizes: 350, 700, 1000
+- Top-K values: 1, 3, 5
 
-```text
-Top-K = 1
-Top-K = 3
-Top-K = 5
+across the full 15-question test set, producing `results/experiment_comparison.csv`.
+
+Result: chunk size 350 combined with Top-K 5 produced the best combination of retrieval confidence (average score 0.45) and category keyword match (60 percent), while maintaining 100 percent refusal accuracy. This configuration is now the project default, as noted above.
+
+Known limitation: because Ollama generation is non-deterministic, repeated evaluation runs on the same 15 questions showed refusal accuracy varying between 93.3 and 100 percent, and keyword match varying between 53.3 and 60 percent. The figures reported above represent the majority result across three repeated runs.
+
+To re-run the full comparison:
+
+```bash
+python src/experiment.py
 ```
 
-Compare:
-- retrieval relevance
-- answer correctness
-- refusal behaviour
-
-Then test different chunk sizes, such as:
-
-```text
-350
-700
-1000
-```
-
-This gives a simple **build -> test -> change -> test again** workflow.
+Note that this overwrites `chunks.json` and `retrieval_index.pkl` with the last configuration tested. Run `python src/ingest.py` and `python src/retrieve.py` afterward to restore the project defaults (chunk size 350) for normal use.
 
 ## Handover status
 
 ### Already prepared
 - starter project structure
 - document ingestion
-- chunking
+- chunking, including word-boundary-safe chunk splitting
 - semantic retrieval
 - local Ollama generation
 - unsupported-answer guard
+- deterministic, de-duplicated source attribution
 - sample test collection
 - baseline evaluation script
+- chunk size and Top-K comparison experiment, with results recorded
 
 ### Team next steps
-1. Agree on the final domain scope and stakeholder.
-2. Add 3–6 authoritative waste-sorting documents.
-3. Record document URLs and versions.
-4. Run the baseline pipeline.
-5. Check retrieval outputs manually.
-6. Add expected source labels to the test collection.
-7. Improve the evaluation framework.
-8. Compare at least two RAG configurations.
-9. Record results in GitHub/Trello.
-10. Decide the final design and assessable conclusions as a team.
+
+1. Agree on the final domain scope and stakeholder. Complete: Victorian household waste sorting.
+2. Add 3-6 authoritative waste-sorting documents. Complete: four Sustainability Victoria sources added.
+3. Record document URLs and versions in a source log. Outstanding.
+4. Run the baseline pipeline. Complete.
+5. Check retrieval outputs manually. Complete, during experiment review.
+6. Add expected source labels to the test collection. Outstanding; would enable proper Recall@K and Precision@K measurement.
+7. Improve the evaluation framework beyond keyword matching. Outstanding; planned for the next sprint.
+8. Compare at least two RAG configurations. Complete: nine configurations tested, see experiment results.
+9. Record results in GitHub and Trello. In progress.
+10. Decide the final design and assessable conclusions as a team. Ongoing.
 
 ## Important assessment note
 
