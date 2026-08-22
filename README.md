@@ -10,7 +10,7 @@
 | sXXXXXXX | Nihant |
 | sXXXXXXX | Shashank |
 | sXXXXXXX | Surbhi |
-| sXXXXXXX | Shobhen |
+| s4129561 | Shobhen |
 
 Starter implementation for a WIL project exploring **Test-Driven Retrieval-Augmented Generation (RAG)** for household waste-sorting questions.
 
@@ -19,6 +19,18 @@ Starter implementation for a WIL project exploring **Test-Driven Retrieval-Augme
 The prototype retrieves relevant information from a small collection of official waste and recycling documents, then asks a local LLM to answer using only that retrieved context.
 
 The key project focus is **evaluation**, not simply chatbot development.
+
+## User Stories
+
+- **As a** household resident, **I want to** ask plain-language questions about how to dispose of an item, **so that** I can sort my waste correctly without searching through council PDFs.
+
+- **As a** household resident, **I want to** receive a clear "I don't know" when my question falls outside official waste-sorting guidance, **so that** I don't act on a guessed or incorrect answer.
+
+- **As a** local council communications officer, **I want to** see which official source document supports each answer, **so that** I can trust and verify the information given to residents.
+
+- **As a** sustainability education coordinator, **I want to** deploy a lightweight Q&A assistant trained only on verified government sources, **so that** I can reduce contamination in recycling/FOGO streams without hiring extra support staff.
+
+- **As a** project evaluator (marker/mentor), **I want to** see quantitative evidence of retrieval accuracy and refusal behaviour, **so that** I can assess whether the RAG solution demonstrably adds value rather than just "looking like a chatbot."
 
 Initial evaluation ideas:
 - retrieval relevance / retrieval accuracy
