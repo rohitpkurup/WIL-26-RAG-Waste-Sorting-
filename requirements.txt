@@ -1,0 +1,6 @@
+numpy>=1.26
+pandas>=2.2
+pypdf>=5.0
+requests>=2.32
+sentence-transformers>=3.0
+scikit-learn>=1.5

@@ -1,0 +1,61 @@
+id,question,expected_category,expected_behaviour,answer,actual_refusal,refusal_correct,category_keyword_match,top_retrieved_source,top_retrieval_score
+Q01,Where should food scraps go?,FOGO,answer,"If a FOGO service is available, food scraps can go into the appropriate organics stream.
+
+Sources:
+- 02_fogo.txt
+- 04_special_waste.txt",False,True,True,02_fogo.txt,0.4714551866054535
+Q02,Can garden clippings go in the green bin?,FOGO,answer,"Yes, garden clippings can go in the green bin, as they are considered food and garden organics (FOGO) and can be processed into compost.
+
+Sources:
+- 02_fogo.txt
+- 01_recycling_bins.txt",False,True,True,02_fogo.txt,0.5091714859008789
+Q03,Can plastic packaging go in the FOGO bin?,Not FOGO,answer,"No, plastic packaging should not be placed in the FOGO bin. According to Sustainability Victoria, ""plastic food packaging"" should be kept out of the FOGO bin.
+
+Sources:
+04_special_waste.txt",False,True,False,02_fogo.txt,0.5864300727844238
+Q04,Can batteries go in my rubbish bin?,E-waste,answer,"No, batteries should not be placed in household rubbish or recycling bins in Victoria. They should be taken to an appropriate e-waste collection or drop-off point.
+
+Sources:
+04_special_waste.txt
+03_ewaste.txt",False,True,True,04_special_waste.txt,0.5300052762031555
+Q05,Where should an old laptop go?,E-waste,answer,"Take it to an appropriate e-waste collection or drop-off point.
+
+Sources:
+04_special_waste.txt",False,True,True,03_ewaste.txt,0.18497179448604584
+Q06,Can soft plastic go in mixed recycling?,Not recycling,answer,"No, soft plastics that can be scrunched into a ball should generally be kept out of household recycling.
+
+Sources:
+04_special_waste.txt
+01_recycling_bins.txt",False,True,False,04_special_waste.txt,0.5360364317893982
+Q07,Can polystyrene go in household recycling?,Not recycling,answer,"No, polystyrene packaging and boxes should not be placed in household recycling.
+
+Sources:
+04_special_waste.txt",False,True,False,04_special_waste.txt,0.5783858895301819
+Q08,Where should glass bottles go?,Glass,answer,"Victoria's household waste system uses four main streams: - Purple: glass bottles and jars.
+
+Sources:
+04_special_waste.txt
+01_recycling_bins.txt",False,True,True,04_special_waste.txt,0.2807007431983948
+Q09,Which bin is used for general rubbish?,General waste,answer,"The red bin is used for general rubbish.
+
+Sources:
+04_special_waste.txt
+01_recycling_bins.txt",False,True,False,04_special_waste.txt,0.5920747518539429
+Q10,Can household chemicals go in any household bin?,Hazardous waste,answer,"No, household chemicals such as some cleaners, bleach, fertiliser, car-care chemicals and nail-polish products should not be placed in household bins.
+
+Sources:
+- 04_special_waste.txt
+- 04_special_waste.txt",False,True,False,04_special_waste.txt,0.78000807762146
+Q11,Where should an old phone go?,E-waste,answer,"Take it to an appropriate e-waste collection or drop-off point.
+
+Sources:
+04_special_waste.txt",False,True,True,03_ewaste.txt,0.139338880777359
+Q12,Can takeaway packaging go in FOGO?,Not FOGO,answer,"No, takeaway packaging should not go in FOGO, as it is considered a contaminant.
+
+Sources:
+01_recycling_bins.txt
+02_fogo.txt
+04_special_waste.txt",False,True,False,02_fogo.txt,0.559565544128418
+Q13,What time does the next train leave?,Unsupported,refuse,I cannot answer this from the available waste-sorting knowledge base.,True,True,True,03_ewaste.txt,0.08531281352043152
+Q14,How do I renew my passport?,Unsupported,refuse,I cannot answer this from the available waste-sorting knowledge base.,True,True,True,03_ewaste.txt,0.05157905071973801
+Q15,Who won the AFL last year?,Unsupported,refuse,I cannot answer this from the available waste-sorting knowledge base.,True,True,True,01_recycling_bins.txt,0.07438232749700546

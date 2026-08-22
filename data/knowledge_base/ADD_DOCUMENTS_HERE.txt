@@ -1,0 +1,9 @@
+Place official waste-sorting PDF or TXT documents in this folder.
+
+Suggested first sources:
+- recycling / bin guidance
+- FOGO / food and garden organics
+- e-waste
+- household chemicals / hazardous waste
+
+Keep the first knowledge base small (around 3–6 documents).

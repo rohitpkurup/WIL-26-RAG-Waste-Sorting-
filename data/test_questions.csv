@@ -1,0 +1,16 @@
+id,question,expected_category,expected_behaviour
+Q01,Where should food scraps go?,FOGO,answer
+Q02,Can garden clippings go in the green bin?,FOGO,answer
+Q03,Can plastic packaging go in the FOGO bin?,Not FOGO,answer
+Q04,Can batteries go in my rubbish bin?,E-waste,answer
+Q05,Where should an old laptop go?,E-waste,answer
+Q06,Can soft plastic go in mixed recycling?,Not recycling,answer
+Q07,Can polystyrene go in household recycling?,Not recycling,answer
+Q08,Where should glass bottles go?,Glass,answer
+Q09,Which bin is used for general rubbish?,General waste,answer
+Q10,Can household chemicals go in any household bin?,Hazardous waste,answer
+Q11,Where should an old phone go?,E-waste,answer
+Q12,Can takeaway packaging go in FOGO?,Not FOGO,answer
+Q13,What time does the next train leave?,Unsupported,refuse
+Q14,How do I renew my passport?,Unsupported,refuse
+Q15,Who won the AFL last year?,Unsupported,refuse

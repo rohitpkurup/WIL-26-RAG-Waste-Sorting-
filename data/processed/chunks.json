@@ -1,0 +1,32 @@
+[
+  {
+    "chunk_id": "01_recycling_bins_0000",
+    "source": "01_recycling_bins.txt",
+    "chunk_index": 0,
+    "text": "TITLE: Victoria's 4-bin recycling system SOURCE ORGANISATION: Sustainability Victoria (Victorian Government) SOURCE PAGE: Victoria's 4-bin recycling system LAST UPDATED: 21 August 2025 Victoria's household waste system uses four main streams: - Lime green: food and garden organics (FOGO). - Purple: glass bottles and jars. - Yellow: mixed recycling. - Red: general rubbish. Separate glass collection reduces contamination in mixed recycling. Food scraps and garden clippings can be separated from landfill waste and processed into compost. Check local council guidance because rollout and accepted materials can vary."
+  },
+  {
+    "chunk_id": "02_fogo_0000",
+    "source": "02_fogo.txt",
+    "chunk_index": 0,
+    "text": "TITLE: Food and garden organics (FOGO) guidance SOURCE ORGANISATION: Sustainability Victoria (Victorian Government) SOURCE PAGE: Keep rubbish out of your food and garden organics bin LAST UPDATED: 28 August 2025 The lime green FOGO bin is intended for accepted food scraps and garden clippings. Keep contaminants out, including fruit stickers, plastic food packaging, cling wrap, resealable bags, containers, and takeaway packaging and utensils, including some products labelled compostable. Correctly separated food and garden material can be processed into compost. Check local council guidance because accepted items may vary."
+  },
+  {
+    "chunk_id": "03_ewaste_0000",
+    "source": "03_ewaste.txt",
+    "chunk_index": 0,
+    "text": "TITLE: E-waste disposal guidance SOURCE ORGANISATION: Sustainability Victoria (Victorian Government) SOURCE PAGE: Recycle e-waste LAST UPDATED: 27 November 2025 E-waste must not be placed in household rubbish or recycling bins in Victoria. Take it to an appropriate e-waste collection or drop-off point. E-waste generally includes unwanted items with a plug, battery or power cord. Examples include batteries, computers, laptops, mobile phones, printers, televisions, electrical appliances and electronic tools. Check council or approved recycling information for suitable local drop-off options."
+  },
+  {
+    "chunk_id": "04_special_waste_0000",
+    "source": "04_special_waste.txt",
+    "chunk_index": 0,
+    "text": "TITLE: Items to keep out of household recycling and bins SOURCE ORGANISATION: Sustainability Victoria (Victorian Government) SOURCE PAGE: Check what goes into your bins on your council website Soft plastics that can be scrunched into a ball should generally be kept out of household recycling. Clothing, shoes and textiles can interfere with recycling machinery. Polystyrene packaging and boxes should not be placed in household recycling. Where a FOGO service is available, food scraps can go into the appropriate organics stream. E-waste items with a cord, plug or battery should not go in household bins. Household chemicals such as some cleaners, bleach, fertiliser, car-care chemicals and nail-p"
+  },
+  {
+    "chunk_id": "04_special_waste_0001",
+    "source": "04_special_waste.txt",
+    "chunk_index": 1,
+    "text": "d not go in household bins. Household chemicals such as some cleaners, bleach, fertiliser, car-care chemicals and nail-polish products should not be placed in household bins. Use an appropriate collection or drop-off service. Check council guidance because local services can differ."
+  }
+]
