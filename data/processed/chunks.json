@@ -1,27 +1,87 @@
 [
   {
-    "chunk_id": "04_special_waste_0000",
-    "source": "04_special_waste.txt",
+    "chunk_id": "09_batteries_ewaste_0000",
+    "source": "09_batteries_ewaste.txt",
     "chunk_index": 0,
-    "text": "TITLE: Items to keep out of household recycling and bins SOURCE ORGANISATION: Sustainability Victoria (Victorian Government) SOURCE PAGE: Check what goes into your bins on your council website Soft plastics that can be scrunched into a ball should generally be kept out of household recycling. Clothing, shoes and textiles can interfere with"
+    "text": "TITLE: How to dispose of batteries and electronic waste in Victoria SOURCE ORGANISATION: Department of Energy, Environment and Climate Action (DEECA), Victorian Government SOURCE PAGE: How to dispose of batteries and electronic waste in Victoria SOURCE URL: https://www.environment.vic.gov.au/household-waste-recycling/ewaste LAST UPDATED: 24"
   },
   {
-    "chunk_id": "04_special_waste_0001",
-    "source": "04_special_waste.txt",
+    "chunk_id": "09_batteries_ewaste_0001",
+    "source": "09_batteries_ewaste.txt",
     "chunk_index": 1,
-    "text": "into a ball should generally be kept out of household recycling. Clothing, shoes and textiles can interfere with recycling machinery. Polystyrene packaging and boxes should not be placed in household recycling. Where a FOGO service is available, food scraps can go into the appropriate organics stream. E-waste items with a cord, plug or battery"
+    "text": "waste in Victoria SOURCE URL: https://www.environment.vic.gov.au/household-waste-recycling/ewaste LAST UPDATED: 24 September 2026 Never put batteries or electronics in any bin. In Victoria it is illegal to dispose of e-waste in any household or kerbside bin. Batteries can cause fires in collection trucks and recycling facilities, and they contain"
   },
   {
-    "chunk_id": "04_special_waste_0002",
-    "source": "04_special_waste.txt",
+    "chunk_id": "09_batteries_ewaste_0002",
+    "source": "09_batteries_ewaste.txt",
     "chunk_index": 2,
-    "text": "is available, food scraps can go into the appropriate organics stream. E-waste items with a cord, plug or battery should not go in household bins. Household chemicals such as some cleaners, bleach, fertiliser, car-care chemicals and nail-polish products should not be placed in household bins. Use an appropriate collection or drop-off service."
+    "text": "household or kerbside bin. Batteries can cause fires in collection trucks and recycling facilities, and they contain valuable materials such as copper that can be recovered. E-waste is any item with a battery, plug or cord that no longer works. If a device lights up, makes a sound, moves or needs charging, it has an embedded battery and is"
   },
   {
-    "chunk_id": "04_special_waste_0003",
-    "source": "04_special_waste.txt",
+    "chunk_id": "09_batteries_ewaste_0003",
+    "source": "09_batteries_ewaste.txt",
     "chunk_index": 3,
-    "text": "and nail-polish products should not be placed in household bins. Use an appropriate collection or drop-off service. Check council guidance because local services can differ."
+    "text": "that no longer works. If a device lights up, makes a sound, moves or needs charging, it has an embedded battery and is e-waste. Items with embedded batteries include bluetooth speakers and headphones, electric toothbrushes, e-scooters, e-bikes and hoverboards, flashing and light-up toys, electric shavers, power banks, remote-controlled and ride-on"
+  },
+  {
+    "chunk_id": "09_batteries_ewaste_0004",
+    "source": "09_batteries_ewaste.txt",
+    "chunk_index": 4,
+    "text": "e-bikes and hoverboards, flashing and light-up toys, electric shavers, power banks, remote-controlled and ride-on toys, cordless and robotic vacuum cleaners, vapes, smartwatches and fitness trackers, and power tools. To store used batteries safely until you reach a drop-off point, cover the battery terminals with clear sticky tape to prevent"
+  },
+  {
+    "chunk_id": "09_batteries_ewaste_0005",
+    "source": "09_batteries_ewaste.txt",
+    "chunk_index": 5,
+    "text": "used batteries safely until you reach a drop-off point, cover the battery terminals with clear sticky tape to prevent sparks. Keep them in a glass or plastic container that is not airtight, such as a jam jar or ice cream tub with the lid off. Do not use a metal container or store batteries with metal objects. Keep them in a cool, dry place away"
+  },
+  {
+    "chunk_id": "09_batteries_ewaste_0006",
+    "source": "09_batteries_ewaste.txt",
+    "chunk_index": 6,
+    "text": "the lid off. Do not use a metal container or store batteries with metal objects. Keep them in a cool, dry place away from heat, children and pets. Take batteries and e-waste to a drop-off point. Find one with the Victorian Government's Recycle Mate search tool or on your council's website."
+  },
+  {
+    "chunk_id": "11_detox_your_home_0000",
+    "source": "11_detox_your_home.txt",
+    "chunk_index": 0,
+    "text": "TITLE: Detox Your Home - free household chemical drop-off events SOURCE ORGANISATION: Department of Energy, Environment and Climate Action (DEECA), Victorian Government SOURCE PAGE: Detox Your Home SOURCE URL: https://www.environment.vic.gov.au/hazardous-household-chemicals/detox-your-home LAST UPDATED: 22 July 2026 Detox Your Home is a free"
+  },
+  {
+    "chunk_id": "11_detox_your_home_0001",
+    "source": "11_detox_your_home.txt",
+    "chunk_index": 1,
+    "text": "LAST UPDATED: 22 July 2026 Detox Your Home is a free Victorian Government service for disposing of hazardous household chemicals safely. Events are staffed by trained chemists. Any Victorian can attend any event, but you must register online first. Detox Your Home accepts acids and alkalis, aerosols, spray paint, automotive paint, bleach, brake"
+  },
+  {
+    "chunk_id": "11_detox_your_home_0002",
+    "source": "11_detox_your_home.txt",
+    "chunk_index": 2,
+    "text": "online first. Detox Your Home accepts acids and alkalis, aerosols, spray paint, automotive paint, bleach, brake fluid, coolant, small camping-stove butane canisters, fertiliser, fuel, hand sanitiser, herbicides and weed killers, insect sprays, pesticides, rat poison and other poisons, machine oil, nail polish remover, oven cleaner, photographic"
+  },
+  {
+    "chunk_id": "11_detox_your_home_0003",
+    "source": "11_detox_your_home.txt",
+    "chunk_index": 3,
+    "text": "insect sprays, pesticides, rat poison and other poisons, machine oil, nail polish remover, oven cleaner, photographic chemicals, pool chemicals, rust remover, transmission fluid, turpentine, paint thinners and strippers, wood preservatives and finishes, and non-halon fire extinguishers. Detox Your Home does not accept motor oil, gas bottles or"
+  },
+  {
+    "chunk_id": "11_detox_your_home_0004",
+    "source": "11_detox_your_home.txt",
+    "chunk_index": 4,
+    "text": "preservatives and finishes, and non-halon fire extinguishers. Detox Your Home does not accept motor oil, gas bottles or cylinders (other than small camping canisters), household paint, or yellow halon fire extinguishers. Heating oil, mercury thermometers and thermostats, helium canisters and propane cylinders need approval before you bring them."
+  },
+  {
+    "chunk_id": "11_detox_your_home_0005",
+    "source": "11_detox_your_home.txt",
+    "chunk_index": 5,
+    "text": "oil, mercury thermometers and thermostats, helium canisters and propane cylinders need approval before you bring them. To transport chemicals to an event, put them in an empty car boot or tray, keep them in their original packaging where possible, and label repackaged or unknown substances. The largest container accepted is 20 kilograms or 20"
+  },
+  {
+    "chunk_id": "11_detox_your_home_0006",
+    "source": "11_detox_your_home.txt",
+    "chunk_index": 6,
+    "text": "where possible, and label repackaged or unknown substances. The largest container accepted is 20 kilograms or 20 litres. Stay in your vehicle while staff unload; it takes about 10 to 15 minutes."
   },
   {
     "chunk_id": "03_ewaste_0000",
@@ -60,6 +120,204 @@
     "text": "some products labelled compostable. Correctly separated food and garden material can be processed into compost. Check local council guidance because accepted items may vary."
   },
   {
+    "chunk_id": "07_glass_recycling_0000",
+    "source": "07_glass_recycling.txt",
+    "chunk_index": 0,
+    "text": "TITLE: Recycling glass in Victoria SOURCE ORGANISATION: Department of Energy, Environment and Climate Action (DEECA), Victorian Government SOURCE PAGE: Recycling glass in Victoria SOURCE URL: https://www.environment.vic.gov.au/household-waste-recycling/recycling-glass LAST UPDATED: 24 September 2026 Glass bottles and jars from food, drinks and"
+  },
+  {
+    "chunk_id": "07_glass_recycling_0001",
+    "source": "07_glass_recycling.txt",
+    "chunk_index": 1,
+    "text": "LAST UPDATED: 24 September 2026 Glass bottles and jars from food, drinks and medicines can be recycled, for example pasta sauce jars, pickle jars, peanut butter jars and beer bottles. Put them in the purple-lidded glass recycling bin if you have one. If your area does not have a glass bin yet, glass bottles and jars can go in the mixed recycling"
+  },
+  {
+    "chunk_id": "07_glass_recycling_0002",
+    "source": "07_glass_recycling.txt",
+    "chunk_index": 2,
+    "text": "bin if you have one. If your area does not have a glass bin yet, glass bottles and jars can go in the mixed recycling bin. Before recycling glass bottles and jars, scrape out food and give them a quick rinse, and keep them loose rather than in bags. Whether lids stay on or come off depends on the council, so check your local council website."
+  },
+  {
+    "chunk_id": "07_glass_recycling_0003",
+    "source": "07_glass_recycling.txt",
+    "chunk_index": 3,
+    "text": "rather than in bags. Whether lids stay on or come off depends on the council, so check your local council website. Drinking glasses, mirrors, window glass, baking dishes, ceramics, crockery and perfume bottles cannot go in any recycling bin, including the glass bin, because they melt at a different temperature to bottles and jars. Put broken"
+  },
+  {
+    "chunk_id": "07_glass_recycling_0004",
+    "source": "07_glass_recycling.txt",
+    "chunk_index": 4,
+    "text": "recycling bin, including the glass bin, because they melt at a different temperature to bottles and jars. Put broken drinking glasses and similar household glassware in the general rubbish bin. Glass is collected separately because small pieces of broken glass get stuck in paper, cardboard and plastic and spoil those materials. Making glass from"
+  },
+  {
+    "chunk_id": "07_glass_recycling_0005",
+    "source": "07_glass_recycling.txt",
+    "chunk_index": 5,
+    "text": "small pieces of broken glass get stuck in paper, cardboard and plastic and spoil those materials. Making glass from recycled glass uses around 20 to 30 percent less energy than making it from virgin sand."
+  },
+  {
+    "chunk_id": "05_sorting_materials_0000",
+    "source": "05_sorting_materials.txt",
+    "chunk_index": 0,
+    "text": "TITLE: How to sort waste and recycling at home - materials guide SOURCE ORGANISATION: Department of Energy, Environment and Climate Action (DEECA), Victorian Government SOURCE PAGE: How to sort waste and recycling at home SOURCE URL: https://www.environment.vic.gov.au/household-waste-recycling/sort-waste-recycling LAST UPDATED: 24 September 2026"
+  },
+  {
+    "chunk_id": "05_sorting_materials_0001",
+    "source": "05_sorting_materials.txt",
+    "chunk_index": 1,
+    "text": "URL: https://www.environment.vic.gov.au/household-waste-recycling/sort-waste-recycling LAST UPDATED: 24 September 2026 Metal: food cans, drink cans, aluminium trays and aluminium foil go in the mixed recycling bin. Scrunch aluminium foil into a ball at least the size of a tennis ball first. Empty and rinse cans and keep them loose, not in bags."
+  },
+  {
+    "chunk_id": "05_sorting_materials_0002",
+    "source": "05_sorting_materials.txt",
+    "chunk_index": 2,
+    "text": "foil into a ball at least the size of a tennis ball first. Empty and rinse cans and keep them loose, not in bags. Pots, pans, cutlery and other metal household items are not accepted in the mixed recycling bin; donate usable ones, and put unusable ones in the general rubbish bin. Paper and cardboard go in the mixed recycling bin. Remove food,"
+  },
+  {
+    "chunk_id": "05_sorting_materials_0003",
+    "source": "05_sorting_materials.txt",
+    "chunk_index": 3,
+    "text": "ones, and put unusable ones in the general rubbish bin. Paper and cardboard go in the mixed recycling bin. Remove food, flatten boxes and keep paper dry. Paper towels, tissues, serviettes and food-soiled or oily paper and cardboard, such as a greasy pizza box, are not accepted in mixed recycling. For shredded paper and wrapping paper, check your"
+  },
+  {
+    "chunk_id": "05_sorting_materials_0004",
+    "source": "05_sorting_materials.txt",
+    "chunk_index": 4,
+    "text": "such as a greasy pizza box, are not accepted in mixed recycling. For shredded paper and wrapping paper, check your council's rules. Hard plastics commonly accepted in mixed recycling include milk, juice and water bottles, yoghurt and ice cream tubs, fruit punnets, biscuit trays, and shampoo and soap bottles. Rules for hard plastics vary between"
+  },
+  {
+    "chunk_id": "05_sorting_materials_0005",
+    "source": "05_sorting_materials.txt",
+    "chunk_index": 5,
+    "text": "and ice cream tubs, fruit punnets, biscuit trays, and shampoo and soap bottles. Rules for hard plastics vary between councils because recycling facilities accept different materials. Empty and rinse containers and keep them loose, never inside plastic bags. Soft plastics are plastics you can scrunch into a ball, such as plastic bags, chip packets"
+  },
+  {
+    "chunk_id": "05_sorting_materials_0006",
+    "source": "05_sorting_materials.txt",
+    "chunk_index": 6,
+    "text": "never inside plastic bags. Soft plastics are plastics you can scrunch into a ball, such as plastic bags, chip packets and the outer wrappers of biscuit packets. Soft plastics generally go in the general rubbish bin. Some councils run soft plastic kerbside trials or drop-off points, and a growing number of supermarkets collect soft plastics again."
+  },
+  {
+    "chunk_id": "05_sorting_materials_0007",
+    "source": "05_sorting_materials.txt",
+    "chunk_index": 7,
+    "text": "run soft plastic kerbside trials or drop-off points, and a growing number of supermarkets collect soft plastics again. Clothing and textiles must not go in recycling bins because they get caught in equipment at recycling facilities. Donate, give away or sell clothing in good condition, repair items with minor damage, turn damaged items into"
+  },
+  {
+    "chunk_id": "05_sorting_materials_0008",
+    "source": "05_sorting_materials.txt",
+    "chunk_index": 8,
+    "text": "Donate, give away or sell clothing in good condition, repair items with minor damage, turn damaged items into cleaning rags, or use a textile collection service or drop-off point. Recycling symbols: the Mobius loop of three arrows does not always mean an item is accepted in household recycling bins. Plastic codes 1 and 2 are commonly accepted,"
+  },
+  {
+    "chunk_id": "05_sorting_materials_0009",
+    "source": "05_sorting_materials.txt",
+    "chunk_index": 9,
+    "text": "does not always mean an item is accepted in household recycling bins. Plastic codes 1 and 2 are commonly accepted, code 5 is accepted by some councils, and codes 3, 4, 6 and 7 are less commonly accepted. On the Australasian Recycling Label, a solid recycling symbol means recycling bin, a transparent recycling symbol means follow the directions"
+  },
+  {
+    "chunk_id": "05_sorting_materials_0010",
+    "source": "05_sorting_materials.txt",
+    "chunk_index": 10,
+    "text": "Label, a solid recycling symbol means recycling bin, a transparent recycling symbol means follow the directions (often store drop-off), and a bin symbol means general rubbish bin. Container deposit scheme: eligible glass, plastic and metal drink containers can be returned for a 10-cent refund through CDS Vic."
+  },
+  {
+    "chunk_id": "08_fogo_details_0000",
+    "source": "08_fogo_details.txt",
+    "chunk_index": 0,
+    "text": "TITLE: Recycling food and garden organics in Victoria SOURCE ORGANISATION: Department of Energy, Environment and Climate Action (DEECA), Victorian Government SOURCE PAGE: Recycling food and garden organics in Victoria SOURCE URL: https://www.environment.vic.gov.au/household-waste-recycling/recycling-food-garden-organics LAST UPDATED: 24 September"
+  },
+  {
+    "chunk_id": "08_fogo_details_0001",
+    "source": "08_fogo_details.txt",
+    "chunk_index": 1,
+    "text": "https://www.environment.vic.gov.au/household-waste-recycling/recycling-food-garden-organics LAST UPDATED: 24 September 2026 The FOGO bin takes food scraps and garden clippings. Bones, citrus peel and onion peel are accepted in FOGO bins, even though they are not suitable for home compost systems. Exactly what is accepted varies by council, so"
+  },
+  {
+    "chunk_id": "08_fogo_details_0002",
+    "source": "08_fogo_details.txt",
+    "chunk_index": 2,
+    "text": "FOGO bins, even though they are not suitable for home compost systems. Exactly what is accepted varies by council, so check your council's website. Never put these in the FOGO bin: fruit stickers, food packaging such as plastic wrapping and meat trays, cling wrap, resealable sandwich bags, containers, and takeaway packaging and utensils. This"
+  },
+  {
+    "chunk_id": "08_fogo_details_0003",
+    "source": "08_fogo_details.txt",
+    "chunk_index": 3,
+    "text": "wrapping and meat trays, cling wrap, resealable sandwich bags, containers, and takeaway packaging and utensils. This includes takeaway items labelled compostable, such as bamboo, sugarcane, cardboard or bioplastic cups, bowls, boxes, straws and cutlery. If packaging and other rubbish go into the FOGO bin, the compost becomes contaminated and may"
+  },
+  {
+    "chunk_id": "08_fogo_details_0004",
+    "source": "08_fogo_details.txt",
+    "chunk_index": 4,
+    "text": "straws and cutlery. If packaging and other rubbish go into the FOGO bin, the compost becomes contaminated and may be sent to landfill. To use the FOGO bin well, collect scraps in a small kitchen caddy, such as a reused ice cream tub, and empty it into the FOGO bin when full. To reduce smells and pests, keep the bin in the shade with the lid"
+  },
+  {
+    "chunk_id": "08_fogo_details_0005",
+    "source": "08_fogo_details.txt",
+    "chunk_index": 5,
+    "text": "cream tub, and empty it into the FOGO bin when full. To reduce smells and pests, keep the bin in the shade with the lid closed, freeze smelly scraps and add them the day before collection, and layer garden clippings between food scraps. Food scraps and garden clippings should only go in the general rubbish bin if you have no FOGO bin and no"
+  },
+  {
+    "chunk_id": "08_fogo_details_0006",
+    "source": "08_fogo_details.txt",
+    "chunk_index": 6,
+    "text": "food scraps. Food scraps and garden clippings should only go in the general rubbish bin if you have no FOGO bin and no composting system such as a compost bin, worm farm or bokashi system. In landfill, organic material produces methane, a greenhouse gas. By 2030 all Victorians with council waste services will have a lime green-lidded FOGO bin or a"
+  },
+  {
+    "chunk_id": "08_fogo_details_0007",
+    "source": "08_fogo_details.txt",
+    "chunk_index": 7,
+    "text": "a greenhouse gas. By 2030 all Victorians with council waste services will have a lime green-lidded FOGO bin or a communal drop-off location."
+  },
+  {
+    "chunk_id": "10_hazardous_chemicals_disposal_0000",
+    "source": "10_hazardous_chemicals_disposal.txt",
+    "chunk_index": 0,
+    "text": "TITLE: How to dispose of hazardous household chemicals SOURCE ORGANISATION: Department of Energy, Environment and Climate Action (DEECA), Victorian Government SOURCE PAGE: How to dispose of hazardous household chemicals SOURCE URL: https://www.environment.vic.gov.au/hazardous-household-chemicals/how-to-dispose-of-hazardous-household-chemicals LAST"
+  },
+  {
+    "chunk_id": "10_hazardous_chemicals_disposal_0001",
+    "source": "10_hazardous_chemicals_disposal.txt",
+    "chunk_index": 1,
+    "text": "https://www.environment.vic.gov.au/hazardous-household-chemicals/how-to-dispose-of-hazardous-household-chemicals LAST UPDATED: 6 July 2026 Never put hazardous chemicals in a rubbish bin, where they can explode, catch fire, leak or mix with other chemicals. Never pour chemicals down the drain, where they pollute the environment and can contaminate"
+  },
+  {
+    "chunk_id": "10_hazardous_chemicals_disposal_0002",
+    "source": "10_hazardous_chemicals_disposal.txt",
+    "chunk_index": 2,
+    "text": "mix with other chemicals. Never pour chemicals down the drain, where they pollute the environment and can contaminate the water supply. Paint: take unwanted paint and paint packaging to a Paintback collection site. Paintback sites accept only paint, not other chemicals. Medicines and pharmaceuticals: return unwanted or expired medicines to a local"
+  },
+  {
+    "chunk_id": "10_hazardous_chemicals_disposal_0003",
+    "source": "10_hazardous_chemicals_disposal.txt",
+    "chunk_index": 3,
+    "text": "accept only paint, not other chemicals. Medicines and pharmaceuticals: return unwanted or expired medicines to a local pharmacy through the Return Unwanted Medicines project. Motor oil: take it to a council disposal point. Motor oil is not accepted at Detox Your Home events. Gas bottles: some council transfer stations accept gas bottles; check a"
+  },
+  {
+    "chunk_id": "10_hazardous_chemicals_disposal_0004",
+    "source": "10_hazardous_chemicals_disposal.txt",
+    "chunk_index": 4,
+    "text": "oil is not accepted at Detox Your Home events. Gas bottles: some council transfer stations accept gas bottles; check a recycling locator. Empty aerosol cans can go in the household mixed recycling bin. Cooking oil: some council transfer stations accept it, and small amounts may be accepted in the FOGO bin if your council allows it. Fluorescent"
+  },
+  {
+    "chunk_id": "10_hazardous_chemicals_disposal_0005",
+    "source": "10_hazardous_chemicals_disposal.txt",
+    "chunk_index": 5,
+    "text": "transfer stations accept it, and small amounts may be accepted in the FOGO bin if your council allows it. Fluorescent lights: take them to a council waste and recycling centre for e-waste recycling. Printer cartridges: use the Cartridges 4 Planet Ark program. Mobile phones: recycle them through MobileMuster. Car batteries: take them to a battery"
+  },
+  {
+    "chunk_id": "10_hazardous_chemicals_disposal_0006",
+    "source": "10_hazardous_chemicals_disposal.txt",
+    "chunk_index": 6,
+    "text": "4 Planet Ark program. Mobile phones: recycle them through MobileMuster. Car batteries: take them to a battery retailer or council waste centre. Household batteries: use a B-cycle drop-off point. Vapes: check your council website or a recycling locator for a drop-off point. Asbestos: follow the guidance on the Asbestos in Victoria website."
+  },
+  {
+    "chunk_id": "10_hazardous_chemicals_disposal_0007",
+    "source": "10_hazardous_chemicals_disposal.txt",
+    "chunk_index": 7,
+    "text": "website or a recycling locator for a drop-off point. Asbestos: follow the guidance on the Asbestos in Victoria website. Ammunition, marine flares, fireworks and explosives: call WorkSafe Victoria. Farm chemicals: use the ChemClear program. Nail polish: leave the open bottle to harden, then put it in the rubbish bin."
+  },
+  {
     "chunk_id": "01_recycling_bins_0000",
     "source": "01_recycling_bins.txt",
     "chunk_index": 0,
@@ -76,5 +334,77 @@
     "source": "01_recycling_bins.txt",
     "chunk_index": 2,
     "text": "and garden clippings can be separated from landfill waste and processed into compost. Check local council guidance because rollout and accepted materials can vary."
+  },
+  {
+    "chunk_id": "04_special_waste_0000",
+    "source": "04_special_waste.txt",
+    "chunk_index": 0,
+    "text": "TITLE: Items to keep out of household recycling and bins SOURCE ORGANISATION: Sustainability Victoria (Victorian Government) SOURCE PAGE: Check what goes into your bins on your council website Soft plastics that can be scrunched into a ball should generally be kept out of household recycling. Clothing, shoes and textiles can interfere with"
+  },
+  {
+    "chunk_id": "04_special_waste_0001",
+    "source": "04_special_waste.txt",
+    "chunk_index": 1,
+    "text": "into a ball should generally be kept out of household recycling. Clothing, shoes and textiles can interfere with recycling machinery. Polystyrene packaging and boxes should not be placed in household recycling. Where a FOGO service is available, food scraps can go into the appropriate organics stream. E-waste items with a cord, plug or battery"
+  },
+  {
+    "chunk_id": "04_special_waste_0002",
+    "source": "04_special_waste.txt",
+    "chunk_index": 2,
+    "text": "is available, food scraps can go into the appropriate organics stream. E-waste items with a cord, plug or battery should not go in household bins. Household chemicals such as some cleaners, bleach, fertiliser, car-care chemicals and nail-polish products should not be placed in household bins. Use an appropriate collection or drop-off service."
+  },
+  {
+    "chunk_id": "04_special_waste_0003",
+    "source": "04_special_waste.txt",
+    "chunk_index": 3,
+    "text": "and nail-polish products should not be placed in household bins. Use an appropriate collection or drop-off service. Check council guidance because local services can differ."
+  },
+  {
+    "chunk_id": "06_four_stream_system_0000",
+    "source": "06_four_stream_system.txt",
+    "chunk_index": 0,
+    "text": "TITLE: Changes to household waste and recycling in Victoria - the 4-stream system SOURCE ORGANISATION: Department of Energy, Environment and Climate Action (DEECA), Victorian Government SOURCE PAGE: Changes to household waste and recycling in Victoria SOURCE URL: https://www.environment.vic.gov.au/household-waste-recycling/kerbside-reform LAST"
+  },
+  {
+    "chunk_id": "06_four_stream_system_0001",
+    "source": "06_four_stream_system.txt",
+    "chunk_index": 1,
+    "text": "and recycling in Victoria SOURCE URL: https://www.environment.vic.gov.au/household-waste-recycling/kerbside-reform LAST UPDATED: 24 September 2026 Victoria is moving every council to a standard 4-stream household waste and recycling system by 2030. The four streams are food and garden organics (FOGO) with a lime green lid, glass recycling with a"
+  },
+  {
+    "chunk_id": "06_four_stream_system_0002",
+    "source": "06_four_stream_system.txt",
+    "chunk_index": 2,
+    "text": "system by 2030. The four streams are food and garden organics (FOGO) with a lime green lid, glass recycling with a purple lid, mixed recycling with a yellow lid, and general rubbish with a red lid. The general rubbish bin has a red lid. Everything in the general rubbish bin goes straight to landfill without sorting. Councils pay a landfill levy on"
+  },
+  {
+    "chunk_id": "06_four_stream_system_0003",
+    "source": "06_four_stream_system.txt",
+    "chunk_index": 3,
+    "text": "lid. Everything in the general rubbish bin goes straight to landfill without sorting. Councils pay a landfill levy on this waste, so keeping food scraps, garden clippings and recyclables out of the red-lid bin reduces costs for ratepayers. The mixed recycling bin has a yellow lid and takes accepted plastic, metal, paper and cardboard items. So far"
+  },
+  {
+    "chunk_id": "06_four_stream_system_0004",
+    "source": "06_four_stream_system.txt",
+    "chunk_index": 4,
+    "text": "The mixed recycling bin has a yellow lid and takes accepted plastic, metal, paper and cardboard items. So far 65 of Victoria's 79 councils have introduced a FOGO service. Food scraps and garden clippings make up about half of what is in a general rubbish bin. Once a FOGO service is available in an area, food scraps and garden clippings are no"
+  },
+  {
+    "chunk_id": "06_four_stream_system_0005",
+    "source": "06_four_stream_system.txt",
+    "chunk_index": 5,
+    "text": "what is in a general rubbish bin. Once a FOGO service is available in an area, food scraps and garden clippings are no longer accepted in the general rubbish bin. So far 43 councils have introduced a separate glass recycling service, and 27 of them provide a purple-lidded kerbside glass bin. Once a separate glass service is available in an area,"
+  },
+  {
+    "chunk_id": "06_four_stream_system_0006",
+    "source": "06_four_stream_system.txt",
+    "chunk_index": 6,
+    "text": "and 27 of them provide a purple-lidded kerbside glass bin. Once a separate glass service is available in an area, glass is no longer accepted in the mixed recycling bin. Apartments and multi-unit buildings often use a private waste provider instead of the council service. Residents there should ask their building manager, owners corporation or"
+  },
+  {
+    "chunk_id": "06_four_stream_system_0007",
+    "source": "06_four_stream_system.txt",
+    "chunk_index": 7,
+    "text": "waste provider instead of the council service. Residents there should ask their building manager, owners corporation or waste provider what applies. Victoria's target is to divert 80% of waste from landfill by 2030."
   }
 ]

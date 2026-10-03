@@ -1,0 +1,7 @@
+config,top_k,questions,overall_correct_auto_pct,answer_correct_auto_pct,unanswered_pct,refusal_accuracy_pct,correct_refusals_pct,not_in_kb_refused_pct,recall_at_k_pct,source_precision_pct,grounding_pct,avg_seconds
+RAG k=1,1,48,85.4,83.8,8.1,91.7,90.9,83.3,89.2,91.2,88.5,0.95
+RAG k=3,3,48,87.5,89.2,0.0,95.8,81.8,66.7,94.6,77.5,93.6,1.45
+RAG k=5,5,48,89.6,91.9,0.0,95.8,81.8,66.7,97.3,65.3,96.3,1.9
+RAG k=8,8,48,93.8,97.3,0.0,95.8,81.8,66.7,100.0,50.0,97.7,2.59
+RAG k=10,10,48,91.7,94.6,0.0,95.8,81.8,66.7,100.0,42.4,97.0,2.44
+No retrieval,0,48,52.1,67.6,0.0,77.1,0.0,0.0,,,,1.36

@@ -1,16 +1,49 @@
-id,question,expected_category,expected_behaviour
-Q01,Where should food scraps go?,FOGO,answer
-Q02,Can garden clippings go in the green bin?,FOGO,answer
-Q03,Can plastic packaging go in the FOGO bin?,Not FOGO,answer
-Q04,Can batteries go in my rubbish bin?,E-waste,answer
-Q05,Where should an old laptop go?,E-waste,answer
-Q06,Can soft plastic go in mixed recycling?,Not recycling,answer
-Q07,Can polystyrene go in household recycling?,Not recycling,answer
-Q08,Where should glass bottles go?,Glass,answer
-Q09,Which bin is used for general rubbish?,General waste,answer
-Q10,Can household chemicals go in any household bin?,Hazardous waste,answer
-Q11,Where should an old phone go?,E-waste,answer
-Q12,Can takeaway packaging go in FOGO?,Not FOGO,answer
-Q13,What time does the next train leave?,Unsupported,refuse
-Q14,How do I renew my passport?,Unsupported,refuse
-Q15,Who won the AFL last year?,Unsupported,refuse
+id,question,question_type,expected_behaviour,expected_source,accept_any,reject_any,reference_answer
+Q01,Where should food scraps go?,direct,answer,01_recycling_bins.txt|02_fogo.txt|04_special_waste.txt|05_sorting_materials.txt|06_four_stream_system.txt|08_fogo_details.txt,FOGO|organics|green,,In the lime green FOGO (food and garden organics) bin.
+Q02,Can garden clippings go in the green bin?,direct,answer,01_recycling_bins.txt|02_fogo.txt|05_sorting_materials.txt|06_four_stream_system.txt|08_fogo_details.txt,@YES,@STARTS_NO,Yes. Garden clippings go in the lime green FOGO bin.
+Q03,Can plastic packaging go in the FOGO bin?,direct,answer,02_fogo.txt|08_fogo_details.txt,@NO,@STARTS_YES,No. Plastic food packaging is a contaminant and must be kept out of FOGO.
+Q04,Can batteries go in my rubbish bin?,direct,answer,03_ewaste.txt|04_special_waste.txt|09_batteries_ewaste.txt,@NO,@STARTS_YES,No. Batteries are e-waste and must go to a drop-off point; never in any bin.
+Q05,Where should an old laptop go?,direct,answer,03_ewaste.txt|04_special_waste.txt|09_batteries_ewaste.txt,e-waste|drop-off|drop off|collection,,To an e-waste collection or drop-off point. Not in any household bin.
+Q06,Can soft plastic go in mixed recycling?,direct,answer,04_special_waste.txt|05_sorting_materials.txt,@NO,@STARTS_YES,No. Soft plastics stay out of household recycling; they generally go in general rubbish.
+Q07,Can polystyrene go in household recycling?,direct,answer,04_special_waste.txt,@NO,@STARTS_YES,No. Polystyrene should not be placed in household recycling.
+Q08,Where should glass bottles go?,direct,answer,01_recycling_bins.txt|05_sorting_materials.txt|06_four_stream_system.txt|07_glass_recycling.txt,purple|glass recycling bin|glass bin|mixed recycling,,In the purple-lid glass bin; or mixed recycling if the area has no glass bin yet.
+Q09,Which bin is used for general rubbish?,direct,answer,01_recycling_bins.txt|06_four_stream_system.txt,red,yellow|purple|lime,The red-lid bin.
+Q10,Can household chemicals go in any household bin?,direct,answer,04_special_waste.txt|10_hazardous_chemicals_disposal.txt|11_detox_your_home.txt,@NO,@STARTS_YES,No. Use a collection or drop-off service such as Detox Your Home.
+Q11,Where should an old phone go?,direct,answer,03_ewaste.txt|04_special_waste.txt|09_batteries_ewaste.txt|10_hazardous_chemicals_disposal.txt,e-waste|drop-off|drop off|MobileMuster|collection,,To an e-waste drop-off point or MobileMuster. Not in any household bin.
+Q12,Can takeaway packaging go in FOGO?,direct,answer,02_fogo.txt|08_fogo_details.txt,@NO,@STARTS_YES,No. Takeaway packaging and utensils must be kept out of FOGO.
+Q13,What time does the next train leave?,out_of_scope,refuse,,,,Should refuse.
+Q14,How do I renew my passport?,out_of_scope,refuse,,,,Should refuse.
+Q15,Who won the AFL last year?,out_of_scope,refuse,,,,Should refuse.
+Q16,Can a greasy pizza box go in the recycling bin?,tricky,answer,05_sorting_materials.txt,@NO,@STARTS_YES,No. Food-soiled or oily cardboard is not accepted in mixed recycling.
+Q17,Can I recycle a broken drinking glass?,tricky,answer,07_glass_recycling.txt,@NO,@STARTS_YES,No. Drinking glasses cannot go in any recycling bin; put them in general rubbish.
+Q18,Can compostable takeaway cups go in the FOGO bin?,tricky,answer,02_fogo.txt|08_fogo_details.txt,@NO,@STARTS_YES,No. Takeaway items labelled compostable must still be kept out of FOGO.
+Q19,Where does aluminium foil go?,direct,answer,05_sorting_materials.txt,mixed recycling|recycling bin|yellow,,"Mixed recycling bin, scrunched into a ball at least tennis-ball size."
+Q20,Can old clothes go in the recycling bin?,direct,answer,04_special_waste.txt|05_sorting_materials.txt,@NO,@STARTS_YES,"No. Clothing jams recycling machinery; donate, sell, repair or use a textile drop-off."
+Q21,Where do chip packets go?,tricky,answer,05_sorting_materials.txt,general rubbish|rubbish bin|red|soft plastic,,"Chip packets are soft plastic: general rubbish bin, or a soft plastic collection point."
+Q22,What colour lid does the glass recycling bin have?,direct,answer,01_recycling_bins.txt|06_four_stream_system.txt|07_glass_recycling.txt,purple,yellow|red,Purple.
+Q23,What colour lid does the mixed recycling bin have?,direct,answer,01_recycling_bins.txt|06_four_stream_system.txt,yellow,purple|red,Yellow.
+Q24,How should I store used batteries before dropping them off?,direct,answer,09_batteries_ewaste.txt,tape|container|jar,,Tape the terminals; keep in a non-airtight glass or plastic container in a cool dry place away from metal.
+Q25,Is it illegal to put e-waste in my household bin in Victoria?,direct,answer,03_ewaste.txt|09_batteries_ewaste.txt,@YES|illegal,@STARTS_NO,Yes. It is illegal to put e-waste in any household or kerbside bin in Victoria.
+Q26,Can I put an electric toothbrush in the rubbish bin?,tricky,answer,03_ewaste.txt|04_special_waste.txt|09_batteries_ewaste.txt,@NO,@STARTS_YES,No. It has an embedded battery so it is e-waste; take it to a drop-off point.
+Q27,How do I dispose of a vape?,tricky,answer,09_batteries_ewaste.txt|10_hazardous_chemicals_disposal.txt,drop-off|drop off|e-waste|council,,Vapes are e-waste; take to a drop-off point (check council or a recycling locator). Never in a bin.
+Q28,How do I get rid of leftover paint?,direct,answer,10_hazardous_chemicals_disposal.txt|11_detox_your_home.txt,Paintback,,Take it to a Paintback collection site.
+Q29,Where can I take unwanted medicines?,direct,answer,10_hazardous_chemicals_disposal.txt,pharmacy,,Return them to a local pharmacy (Return Unwanted Medicines project).
+Q30,Can I pour old chemicals down the drain?,direct,answer,10_hazardous_chemicals_disposal.txt,@NO,@STARTS_YES,No. Never pour chemicals down the drain; use a disposal service.
+Q31,Does Detox Your Home cost anything?,direct,answer,11_detox_your_home.txt,free,,No. It is free.
+Q32,Can I take motor oil to a Detox Your Home event?,tricky,answer,10_hazardous_chemicals_disposal.txt|11_detox_your_home.txt,@NO,@STARTS_YES,No. Motor oil is not accepted; take it to a council disposal point.
+Q33,Can empty aerosol cans go in the recycling bin?,tricky,answer,10_hazardous_chemicals_disposal.txt,@YES,@STARTS_NO,Yes. Empty aerosol cans can go in the mixed recycling bin.
+Q34,Can bones and citrus peel go in the FOGO bin?,tricky,answer,08_fogo_details.txt,@YES,@STARTS_NO,Yes. Bones and citrus peel are accepted in FOGO bins.
+Q35,Should I put my recycling in a plastic bag?,direct,answer,05_sorting_materials.txt|07_glass_recycling.txt,@NO,@STARTS_YES,No. Keep recycling loose; never bag it.
+Q36,Can pots and pans go in the mixed recycling bin?,tricky,answer,05_sorting_materials.txt,@NO,@STARTS_YES,No. Donate usable ones; unusable ones go in general rubbish.
+Q37,I live in an apartment. Do the same bin rules apply to me?,tricky,answer,06_four_stream_system.txt,building manager|owners corporation|private|waste provider,,Apartments often use a private waste provider; ask the building manager or owners corporation.
+Q38,My area has no glass bin yet. Where do glass jars go?,tricky,answer,05_sorting_materials.txt|07_glass_recycling.txt,mixed recycling|yellow,,In the mixed recycling bin.
+Q39,Can tissues and paper towels go in the recycling?,direct,answer,05_sorting_materials.txt,@NO,@STARTS_YES,No. Tissues and paper towels are not accepted in mixed recycling.
+Q40,What does the bin symbol on the Australasian Recycling Label mean?,direct,answer,05_sorting_materials.txt,general rubbish|rubbish bin,,Put the item in the general rubbish bin.
+Q41,Can you recommend a good pizza restaurant in Melbourne?,out_of_scope,refuse,,,,Should refuse.
+Q42,What is the weather forecast for tomorrow?,out_of_scope,refuse,,,,Should refuse.
+Q43,What day is my bin collected in Brunswick?,not_in_kb,refuse,,,,Should refuse: collection days are not in the knowledge base.
+Q44,How do I dispose of an old mattress?,not_in_kb,refuse,,,,Should refuse: mattresses are not covered in the knowledge base.
+Q45,Can disposable nappies go in the FOGO bin?,not_in_kb,refuse,,,,Should refuse: nappies are not covered in the knowledge base.
+Q46,How much is the fine for putting the wrong item in a recycling bin?,not_in_kb,refuse,,,,Should refuse: fines are not covered in the knowledge base.
+Q47,Where is the nearest tip to Footscray and what are its opening hours?,not_in_kb,refuse,,,,Should refuse: local sites and hours are not in the knowledge base.
+Q48,Can I put dog poo in the FOGO bin?,not_in_kb,refuse,,,,Should refuse: pet waste is not covered in the knowledge base.

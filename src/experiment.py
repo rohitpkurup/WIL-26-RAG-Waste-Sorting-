@@ -19,7 +19,7 @@ from rag import WasteSortingRAG
 from evaluate import contains_expected_category
 
 ROOT = Path(__file__).resolve().parents[1]
-TEST_FILE = ROOT / "data" / "test_questions.csv"
+TEST_FILE = ROOT / "data" / "test_questions_milestone1.csv"
 CHUNKS_FILE = ROOT / "data" / "processed" / "chunks.json"
 RESULT_FILE = ROOT / "results" / "experiment_comparison.csv"
 

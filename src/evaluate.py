@@ -3,7 +3,7 @@ import pandas as pd
 from rag import WasteSortingRAG
 
 ROOT = Path(__file__).resolve().parents[1]
-TEST_FILE = ROOT / "data" / "test_questions.csv"
+TEST_FILE = ROOT / "data" / "test_questions_milestone1.csv"
 RESULT_FILE = ROOT / "results" / "baseline_results.csv"
 
 
